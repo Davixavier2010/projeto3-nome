@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLT FIT | Academia & Centro de Performance - Site Vitrine</title>
+  <meta name="description" content="Conheça a Volt Fit: academia moderna com musculação, cross training, spinning, pilates e lutas. Equipamentos de ponta, planos acessíveis e localização privilegiada.">
+  <meta name="keywords" content="academia, musculação, cross training, spinning, pilates, planos academia, treino, saúde, fitness">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#FACC15',
+              yellowHover: '#EAB308',
+              yellowLight: '#FEF08A',
+              blue: '#1D4ED8',
+              blueHover: '#1E40AF',
+              blueLight: '#3B82F6',
+              navy: '#0B1536',
+              deep: '#060B1E',
+              card: '#0D1B44'
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-brand-deep text-slate-100 antialiased selection:bg-brand-yellow selection:text-brand-deep overflow-x-hidden">
+
+  <!-- TOP PROMO BAR -->
+  <div class="bg-gradient-to-r from-brand-blue via-blue-600 to-brand-blue text-white py-2 px-4 text-center text-xs md:text-sm font-semibold tracking-wide border-b border-brand-yellow/30 flex items-center justify-center gap-2">
+    <span class="inline-flex items-center justify-center bg-brand-yellow text-slate-950 px-2 py-0.5 rounded text-xs font-black uppercase tracking-wider animate-pulse">Oferta</span>
+    <span>⚡ <strong>Matrícula Grátis</strong> este mês em qualquer plano! Ganhe também 1 avaliação física computadorizada.</span>
+    <a href="#planos" class="underline hover:text-brand-yellow ml-2 hidden sm:inline-block font-bold">Ver Planos &rarr;</a>
+  </div>
+
+  <!-- HEADER / NAVBAR -->
+  <header id="mainHeader" class="fixed top-[37px] left-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#inicio" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-brand-yellow text-2xl shadow-lg shadow-blue-600/30 group-hover:scale-105 transition-transform border border-brand-yellow/40">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-2xl tracking-tighter text-white">VOLT<span class="text-brand-yellow">FIT</span></span>
+            <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold -mt-1">Performance & Club</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium">
+          <a href="#inicio" class="text-white hover:text-brand-yellow transition-colors">Início</a>
+          <a href="#sobre" class="text-slate-300 hover:text-brand-yellow transition-colors">Diferenciais</a>
+          <a href="#modalidades" class="text-slate-300 hover:text-brand-yellow transition-colors">Modalidades</a>
+          <a href="#planos" class="text-slate-300 hover:text-brand-yellow transition-colors font-semibold">Planos & Preços</a>
+          <a href="#galeria" class="text-slate-300 hover:text-brand-yellow transition-colors">Galeria</a>
+          <a href="#imc" class="text-slate-300 hover:text-brand-yellow transition-colors">Calculadora IMC</a>
+          <a href="#localizacao" class="text-slate-300 hover:text-brand-yellow transition-colors">Unidades</a>
+          <a href="#faq" class="text-slate-300 hover:text-brand-yellow transition-colors">FAQ</a>
+        </nav>
+
+        <!-- CTA & Actions -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a href="#aula-gratis" class="btn-yellow px-5 py-2.5 rounded-full text-xs md:text-sm uppercase tracking-wider font-extrabold flex items-center gap-2">
+            <i class="fa-regular fa-calendar-check text-base"></i>
+            <span>Aula Grátis</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" aria-label="Abrir Menu" class="lg:hidden p-2 text-white hover:text-brand-yellow transition-colors">
+          <i class="fa-solid fa-bars text-2xl text-brand-yellow"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-brand-navy/95 border-b border-blue-900/60 backdrop-blur-xl px-6 py-6 transition-all duration-300 shadow-2xl">
+      <div class="flex flex-col gap-4 text-base font-semibold">
+        <a href="#inicio" class="text-white hover:text-brand-yellow py-1">Início</a>
+        <a href="#sobre" class="text-slate-300 hover:text-brand-yellow py-1">Diferenciais</a>
+        <a href="#modalidades" class="text-slate-300 hover:text-brand-yellow py-1">Modalidades</a>
+        <a href="#planos" class="text-brand-yellow hover:text-white py-1">Planos & Preços</a>
+        <a href="#galeria" class="text-slate-300 hover:text-brand-yellow py-1">Galeria de Fotos</a>
+        <a href="#imc" class="text-slate-300 hover:text-brand-yellow py-1">Calculadora de IMC</a>
+        <a href="#localizacao" class="text-slate-300 hover:text-brand-yellow py-1">Unidades & Localização</a>
+        <a href="#faq" class="text-slate-300 hover:text-brand-yellow py-1">Perguntas Frequentes</a>
+        <div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
+          <a href="#aula-gratis" class="btn-yellow text-center py-3 rounded-xl text-sm font-black uppercase tracking-wider">
+            Agendar Aula Grátis
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="btn-blue-outline text-center py-3 rounded-xl text-sm font-bold flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg text-green-400"></i> Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section id="inicio" class="relative pt-36 pb-20 md:pt-48 md:pb-32 hero-bg overflow-hidden flex items-center min-h-[90vh]">
+    <!-- Background Glows -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-blue/30 rounded-full blur-[130px] pointer-events-none pulse-glow-circle"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-brand-yellow/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Text Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 bg-brand-blue/30 border border-brand-yellow/50 rounded-full px-4 py-1.5 shadow-lg backdrop-blur-md">
+            <i class="fa-solid fa-fire-flame-curved text-brand-yellow"></i>
+            <span class="text-xs md:text-sm font-bold uppercase tracking-wider text-slate-200">A melhor estrutura fitness da sua região</span>
+          </div>
+
+          <h1 class="font-heading font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight uppercase">
+            TRANSFORME SEU CORPO. <br>
+            <span class="text-brand-yellow drop-shadow-md">SUPERE SEUS LIMITES.</span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Ambiente 100% climatizado, maquinário biomecânico importado de última geração e profissionais focados na sua evolução física diária.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+            <a href="#planos" class="btn-yellow px-8 py-4 rounded-xl text-base font-black uppercase tracking-wider flex items-center justify-center gap-3">
+              <i class="fa-solid fa-trophy text-lg"></i>
+              <span>Ver Planos & Valores</span>
+            </a>
+            <a href="#aula-gratis" class="btn-blue-outline px-8 py-4 rounded-xl text-base font-bold flex items-center justify-center gap-3">
+              <i class="fa-solid fa-dumbbell text-brand-yellow"></i>
+              <span>Agendar Aula Grátis</span>
+            </a>
+          </div>
+
+          <!-- Quick Badges -->
+          <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 border-t border-slate-800/80">
+            <div class="flex items-center gap-2 text-slate-300 text-xs sm:text-sm">
+              <i class="fa-solid fa-check-circle text-brand-yellow text-base"></i>
+              <span>Sem Taxa de Matrícula</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300 text-xs sm:text-sm">
+              <i class="fa-solid fa-check-circle text-brand-yellow text-base"></i>
+              <span>Aberto 7 Dias / Semana</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300 text-xs sm:text-sm">
+              <i class="fa-solid fa-check-circle text-brand-yellow text-base"></i>
+              <span>Estacionamento Grátis</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300 text-xs sm:text-sm">
+              <i class="fa-solid fa-check-circle text-brand-yellow text-base"></i>
+              <span>App de Treino Próprio</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Visual Hero Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Outer Glow Border Card -->
+            <div class="glass-panel p-2 rounded-3xl border-2 border-brand-yellow/30 shadow-2xl relative overflow-hidden group">
+              <img 
+                src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80" 
+                alt="Estrutura da academia Volt Fit com equipamentos de ponta" 
+                class="w-full h-[430px] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700"
+              >
+              
+              <!-- Floating Highlight Badge 1 -->
+              <div class="absolute top-6 left-6 glass-panel border border-brand-yellow/40 rounded-xl px-4 py-2.5 flex items-center gap-3 shadow-xl backdrop-blur-md">
+                <div class="w-10 h-10 rounded-lg bg-brand-yellow text-slate-950 flex items-center justify-center font-black text-lg">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-300 font-semibold uppercase">Ambiente Premium</div>
+                  <div class="text-sm font-black text-white">100% Climatizado</div>
+                </div>
+              </div>
+
+              <!-- Floating Highlight Badge 2 -->
+              <div class="absolute bottom-6 right-6 glass-panel border border-blue-500/40 rounded-xl px-4 py-2.5 flex items-center gap-3 shadow-xl backdrop-blur-md">
+                <div class="w-10 h-10 rounded-lg bg-brand-blue text-brand-yellow flex items-center justify-center font-black text-lg">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-300 font-semibold uppercase">Instrutores</div>
+                  <div class="text-sm font-black text-white">100% Certificados</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       NUMBERS & STATS STRIP
+       ========================================================================= -->
+  <section id="statsSection" class="py-10 bg-brand-navy border-y border-blue-900/50 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-4 border-r last:border-r-0 border-blue-900/40">
+          <div class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-brand-yellow">
+            +<span class="counter-val" data-target="2500">0</span>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm font-semibold uppercase tracking-wider mt-1">Alunos Ativos</p>
+        </div>
+
+        <div class="p-4 border-r last:border-r-0 border-blue-900/40">
+          <div class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white">
+            +<span class="counter-val" data-target="45">0</span>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm font-semibold uppercase tracking-wider mt-1">Aulas Coletivas / Sem</p>
+        </div>
+
+        <div class="p-4 border-r last:border-r-0 border-blue-900/40">
+          <div class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-brand-yellow">
+            +<span class="counter-val" data-target="1500">0</span> m²
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm font-semibold uppercase tracking-wider mt-1">De Área de Treino</p>
+        </div>
+
+        <div class="p-4">
+          <div class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white">
+            <span class="counter-val" data-target="99">0</span>%
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm font-semibold uppercase tracking-wider mt-1">Satisfação dos Alunos</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       DIFERENCIAIS / SOBRE NÓS
+       ========================================================================= -->
+  <section id="sobre" class="py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+          Por que a Volt Fit?
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white mt-3">
+          Feita para Quem Busca <span class="text-brand-yellow">Resultados Reais</span>
+        </h2>
+        <p class="text-slate-400 mt-4 text-base sm:text-lg">
+          Não somos apenas uma academia de passagem. Criamos uma experiência completa combinando ciência do movimento, tecnologia e suporte motivacional contínuo.
+        </p>
+      </div>
+
+      <!-- Grid of Differentials -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Differential Card 1 -->
+        <div class="glass-panel glass-panel-hover p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-blue flex items-center justify-center text-brand-yellow text-2xl mb-6 shadow-md border border-brand-yellow/30">
+              <i class="fa-solid fa-weight-hanging"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3">Biomecânica de Ponta</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Equipamentos importados calibrados para isolamento muscular com máxima segurança articular e ergonomia impecável.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-2">
+            <span>Menor risco de lesão</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Differential Card 2 -->
+        <div class="glass-panel glass-panel-hover p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-yellow text-slate-950 flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3">App com Treino Guiado</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Acesse suas fichas, vídeos explicativos de cada exercício, histórico de cargas e agendamento de aulas direto no smartphone.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-2">
+            <span>Evolução na palma da mão</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Differential Card 3 -->
+        <div class="glass-panel glass-panel-hover p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-blue flex items-center justify-center text-brand-yellow text-2xl mb-6 shadow-md border border-brand-yellow/30">
+              <i class="fa-solid fa-shower"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3">Vestiários Premium & Sauna</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Duchas aquecidas de alta pressão, secadores profissionais, armários digitais e sauna seca para relaxar no pós-treino.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-2">
+            <span>Conforto de clube</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Differential Card 4 -->
+        <div class="glass-panel glass-panel-hover p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-yellow text-slate-950 flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3">Instrutores no Salão</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Aqui você nunca treina abandonado. Educadores físicos em todos os turnos para corrigir postura e ajustar seus pesos.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-brand-yellow font-bold uppercase tracking-wider flex items-center gap-2">
+            <span>Acompanhamento real</span> &rarr;
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MODALIDADES / AULAS COLETIVAS
+       ========================================================================= -->
+  <section id="modalidades" class="py-24 bg-brand-navy/60 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+            Aulas & Modalidades
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white mt-3">
+            Escolha Como Deseja <span class="text-brand-yellow">Evoluir</span>
+          </h2>
+        </div>
+        <p class="text-slate-400 max-w-md text-sm sm:text-base">
+          Do treino pesado de força às aulas mais dinâmicas de queima calórica e mobilidade. Tudo incluso nos planos Gold e Black.
+        </p>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Modality 1: Musculação -->
+        <div class="modality-card group h-96 relative rounded-2xl border border-blue-900/60 shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" 
+            alt="Musculação e Hipertrofia na Volt Fit" 
+            class="w-full h-full object-cover"
+          >
+          <div class="modality-overlay absolute inset-0 p-6 flex flex-col justify-end">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-yellow bg-brand-blue/80 px-3 py-1 rounded-full w-max mb-2">
+              Força & Hipertrofia
+            </span>
+            <h3 class="font-heading font-black text-2xl text-white mb-2">Musculação Clássica</h3>
+            <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mb-4">
+              Halteres de 1kg a 60kg, bancos olímpicos, gaiolas de agachamento livre e máquinas articuladas para construir massa magra.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-300 font-semibold pt-2 border-t border-slate-700/60">
+              <span><i class="fa-regular fa-clock text-brand-yellow mr-1"></i> Acesso Livre</span>
+              <span><i class="fa-solid fa-fire text-brand-yellow mr-1"></i> Gasto Alto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 2: Cross Training -->
+        <div class="modality-card group h-96 relative rounded-2xl border border-blue-900/60 shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" 
+            alt="Cross Training Funcional na Volt Fit" 
+            class="w-full h-full object-cover"
+          >
+          <div class="modality-overlay absolute inset-0 p-6 flex flex-col justify-end">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-950 bg-brand-yellow px-3 py-1 rounded-full w-max mb-2 font-black">
+              Alta Intensidade
+            </span>
+            <h3 class="font-heading font-black text-2xl text-white mb-2">Cross & Funcional</h3>
+            <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mb-4">
+              Pneu, corda naval, kettlebell, saltos e circuitos para elevar seu condicionamento cardiorrespiratório e queimar calorias.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-300 font-semibold pt-2 border-t border-slate-700/60">
+              <span><i class="fa-regular fa-clock text-brand-yellow mr-1"></i> 50 min/aula</span>
+              <span><i class="fa-solid fa-fire text-brand-yellow mr-1"></i> Até 800 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 3: Spinning -->
+        <div class="modality-card group h-96 relative rounded-2xl border border-blue-900/60 shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" 
+            alt="Spinning Indoor Cycling" 
+            class="w-full h-full object-cover"
+          >
+          <div class="modality-overlay absolute inset-0 p-6 flex flex-col justify-end">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-yellow bg-brand-blue/80 px-3 py-1 rounded-full w-max mb-2">
+              Cardio Imersivo
+            </span>
+            <h3 class="font-heading font-black text-2xl text-white mb-2">Spinning Neon Club</h3>
+            <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mb-4">
+              Pedale no ritmo de playlists vibrantes sob iluminação de boate. Uma experiência sensorial eletrizante para secar e tonificar pernas.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-300 font-semibold pt-2 border-t border-slate-700/60">
+              <span><i class="fa-regular fa-clock text-brand-yellow mr-1"></i> 45 min/aula</span>
+              <span><i class="fa-solid fa-fire text-brand-yellow mr-1"></i> Até 700 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 4: Lutas -->
+        <div class="modality-card group h-96 relative rounded-2xl border border-blue-900/60 shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=800&q=80" 
+            alt="Aulas de Luta Muay Thai e Boxe" 
+            class="w-full h-full object-cover"
+          >
+          <div class="modality-overlay absolute inset-0 p-6 flex flex-col justify-end">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-yellow bg-brand-blue/80 px-3 py-1 rounded-full w-max mb-2">
+              Defesa & Foco
+            </span>
+            <h3 class="font-heading font-black text-2xl text-white mb-2">Muay Thai & Boxe</h3>
+            <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mb-4">
+              Aprenda técnicas de socos, chutes e esquivas, ganhe disciplina mental e alivie todo o estresse do dia a dia.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-300 font-semibold pt-2 border-t border-slate-700/60">
+              <span><i class="fa-regular fa-clock text-brand-yellow mr-1"></i> 60 min/aula</span>
+              <span><i class="fa-solid fa-fire text-brand-yellow mr-1"></i> Até 750 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 5: Pilates & Mobilidade -->
+        <div class="modality-card group h-96 relative rounded-2xl border border-blue-900/60 shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=800&q=80" 
+            alt="Pilates e Alongamento" 
+            class="w-full h-full object-cover"
+          >
+          <div class="modality-overlay absolute inset-0 p-6 flex flex-col justify-end">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-yellow bg-brand-blue/80 px-3 py-1 rounded-full w-max mb-2">
+              Postura & Core
+            </span>
+            <h3 class="font-heading font-black text-2xl text-white mb-2">Pilates Solo & Mobilidade</h3>
+            <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mb-4">
+              Fortaleça o abdômen profundo, elimine dores nas costas e desenvolva flexibilidade com exercícios controlados e respiração.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-300 font-semibold pt-2 border-t border-slate-700/60">
+              <span><i class="fa-regular fa-clock text-brand-yellow mr-1"></i> 50 min/aula</span>
+              <span><i class="fa-solid fa-heart-pulse text-brand-yellow mr-1"></i> Bem-estar total</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 6: FitDance / Ritmos -->
+        <div class="modality-card group h-96 relative rounded-2xl border border-blue-900/60 shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&w=800&q=80" 
+            alt="Aulas de FitDance e Ritmos" 
+            class="w-full h-full object-cover"
+          >
+          <div class="modality-overlay absolute inset-0 p-6 flex flex-col justify-end">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-950 bg-brand-yellow px-3 py-1 rounded-full w-max mb-2 font-black">
+              Dança & Energia
+            </span>
+            <h3 class="font-heading font-black text-2xl text-white mb-2">FitDance & Ritmos</h3>
+            <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mb-4">
+              Coreografias com os maiores sucessos musicais do momento. Pura diversão que não parece treino enquanto queima muitas calorias.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-300 font-semibold pt-2 border-t border-slate-700/60">
+              <span><i class="fa-regular fa-clock text-brand-yellow mr-1"></i> 50 min/aula</span>
+              <span><i class="fa-solid fa-fire text-brand-yellow mr-1"></i> Até 600 kcal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TABELA DE PLANOS E PREÇOS
+       ========================================================================= -->
+  <section id="planos" class="py-24 relative overflow-hidden">
+    <!-- Blue Glow Effect -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-brand-blue/20 rounded-full blur-[160px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+          Planos Transparentes
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white mt-3">
+          Invista na sua <span class="text-brand-yellow">Saúde e Autoestima</span>
+        </h2>
+        <p class="text-slate-400 mt-4 text-base sm:text-lg">
+          Escolha o plano ideal para a sua rotina. Todos incluem acesso a equipamentos de última geração e vestiários completos.
+        </p>
+
+        <!-- Monthly / Annual Toggle Switch -->
+        <div class="mt-8 inline-flex items-center gap-4 bg-brand-navy p-2 rounded-full border border-blue-900/60 shadow-lg">
+          <span id="monthlyLabel" class="text-sm font-semibold text-slate-400 cursor-pointer">Mensal</span>
+          
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="billingToggle" class="sr-only peer" checked>
+            <div class="w-14 h-7 bg-slate-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[4px] after:bg-brand-yellow after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-brand-blue"></div>
+          </label>
+
+          <span id="annualLabel" class="text-sm font-bold text-brand-yellow flex items-center gap-1.5 cursor-pointer">
+            Anual <span class="bg-brand-yellow text-slate-950 text-[10px] uppercase font-black px-2 py-0.5 rounded-full">Economize 20%</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch pt-4">
+        
+        <!-- CARD 1: SILVER / BÁSICO -->
+        <div class="glass-panel p-8 rounded-3xl border border-blue-900/50 flex flex-col justify-between hover:border-slate-500 transition-colors">
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="font-heading font-bold text-2xl text-white">Plano Silver</h3>
+              <span class="text-xs bg-slate-800 text-slate-300 font-semibold px-3 py-1 rounded-full">Essencial</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-6">Ideal para quem busca musculação pura e quer treinar no seu próprio ritmo.</p>
+
+            <!-- Price -->
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <div class="flex items-baseline gap-1">
+                <span class="text-slate-400 text-lg font-medium">R$</span>
+                <span id="priceSilver" class="font-heading font-black text-5xl text-white">69,90</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1 billing-period">/mês (no plano anual)</p>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3.5 text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>Acesso total à área de musculação</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>Área cardio e esteiras de última geração</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>Vestiários completos com ducha</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>App Volt Fit com ficha digital</span>
+              </li>
+              <li class="flex items-center gap-3 text-slate-500">
+                <i class="fa-solid fa-xmark text-slate-600 text-base"></i>
+                <span class="line-through">Aulas coletivas e Spinning</span>
+              </li>
+              <li class="flex items-center gap-3 text-slate-500">
+                <i class="fa-solid fa-xmark text-slate-600 text-base"></i>
+                <span class="line-through">Livre acesso em todas as unidades</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#aula-gratis" class="btn-blue-outline w-full py-3.5 rounded-xl text-center font-bold text-sm uppercase tracking-wider block">
+            Escolher Silver
+          </a>
+        </div>
+
+        <!-- CARD 2: GOLD / POPULAR (DESTACADO EM AMARELO) -->
+        <div class="popular-plan-card glass-panel p-8 rounded-3xl shadow-2xl flex flex-col justify-between relative overflow-hidden">
+          <!-- Top Tag -->
+          <div class="absolute -top-1 -right-1 bg-brand-yellow text-slate-950 font-black text-[11px] tracking-wider uppercase px-5 py-1.5 rounded-bl-2xl shadow-md">
+            ⭐ Mais Escolhido
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-4 mt-2">
+              <h3 class="font-heading font-black text-2xl text-brand-yellow">Plano Gold</h3>
+              <span class="text-xs bg-brand-yellow/20 text-brand-yellow font-bold px-3 py-1 rounded-full border border-brand-yellow/40">Completo</span>
+            </div>
+            <p class="text-slate-300 text-sm mb-6">A experiência definitiva com todas as aulas coletivas, spinning e livre acesso.</p>
+
+            <!-- Price -->
+            <div class="mb-6 pb-6 border-b border-brand-yellow/30">
+              <div class="flex items-baseline gap-1">
+                <span class="text-brand-yellow text-lg font-bold">R$</span>
+                <span id="priceGold" class="font-heading font-black text-6xl text-white">109,90</span>
+              </div>
+              <p class="text-xs text-brand-yellow mt-1 font-semibold billing-period">/mês (no plano anual)</p>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3.5 text-sm text-slate-200 mb-8">
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-xs font-bold">✓</div>
+                <span class="font-semibold text-white">Musculação + Todas as Aulas Coletivas</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-xs font-bold">✓</div>
+                <span>Aulas de Spinning Neon Club inclusas</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-xs font-bold">✓</div>
+                <span>Livre acesso a TODAS as unidades</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-xs font-bold">✓</div>
+                <span>Avaliação física trimestral computadorizada</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-xs font-bold">✓</div>
+                <span>Traga 1 amigo para treinar 4x por mês</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-xs font-bold">✓</div>
+                <span>Armário rotativo exclusivo + Acesso à sauna</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#aula-gratis" class="btn-yellow w-full py-4 rounded-xl text-center font-black text-sm uppercase tracking-wider block shadow-lg">
+            Garantir Matrícula Grátis
+          </a>
+        </div>
+
+        <!-- CARD 3: BLACK VIP -->
+        <div class="glass-panel p-8 rounded-3xl border border-blue-900/50 flex flex-col justify-between hover:border-slate-500 transition-colors">
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="font-heading font-bold text-2xl text-white">Plano Black VIP</h3>
+              <span class="text-xs bg-blue-900/80 text-blue-300 font-semibold px-3 py-1 rounded-full border border-blue-700">All-Inclusive</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-6">Para quem busca suporte máximo com personal exclusivo e benefícios VIP.</p>
+
+            <!-- Price -->
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <div class="flex items-baseline gap-1">
+                <span class="text-slate-400 text-lg font-medium">R$</span>
+                <span id="priceBlack" class="font-heading font-black text-5xl text-white">149,90</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1 billing-period">/mês (no plano anual)</p>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3.5 text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span class="text-white font-medium">Tudo o que está incluso no Plano Gold</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span class="text-brand-yellow font-semibold">1 Sessão de Personal Trainer mensal</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>Consulta com nutricionista esportiva a cada 60 dias</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>Amigo livre: traga acompanhante todo fim de semana</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>Kit Volt Fit oficial (Camiseta dry-fit + squeeze)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-brand-yellow text-base"></i>
+                <span>Toalhas esterilizadas cortesia no vestiário</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#aula-gratis" class="btn-blue-outline w-full py-3.5 rounded-xl text-center font-bold text-sm uppercase tracking-wider block">
+            Escolher Black VIP
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Trust Badges below plans -->
+      <div class="mt-12 text-center text-xs text-slate-400 flex flex-wrap justify-center items-center gap-6">
+        <span><i class="fa-solid fa-shield-halved text-brand-yellow mr-1.5"></i> Sem taxa oculta</span>
+        <span><i class="fa-solid fa-credit-card text-brand-yellow mr-1.5"></i> Cartão de crédito sem travar o limite</span>
+        <span><i class="fa-solid fa-repeat text-brand-yellow mr-1.5"></i> Cancele quando quiser com aviso prévio</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CALCULADORA DE IMC (INTERACTIVE WIDGET)
+       ========================================================================= -->
+  <section id="imc" class="py-20 bg-brand-navy/80 border-y border-blue-900/60 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-brand-yellow/30 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Text Info -->
+          <div class="lg:col-span-6 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+              Ferramenta Gratuita
+            </span>
+            <h2 class="font-heading font-black text-3xl sm:text-4xl uppercase text-white">
+              Calcule seu <span class="text-brand-yellow">IMC</span> e Descubra o Treino Ideal
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              O Índice de Massa Corporal é o primeiro passo para traçar metas reais. Insira seus dados e veja qual modalidade da Volt Fit acelera seus objetivos com segurança.
+            </p>
+
+            <!-- IMC Table Indicator -->
+            <div class="grid grid-cols-4 gap-2 pt-4 text-center text-[11px] font-semibold">
+              <div class="bg-blue-950/80 p-2 rounded-lg border border-blue-800 text-blue-300">
+                Abaixo &lt; 18.5
+              </div>
+              <div class="bg-emerald-950/80 p-2 rounded-lg border border-emerald-700 text-emerald-300">
+                Normal 18.5 - 24.9
+              </div>
+              <div class="bg-amber-950/80 p-2 rounded-lg border border-amber-700 text-amber-300">
+                Sobrepeso 25 - 29.9
+              </div>
+              <div class="bg-rose-950/80 p-2 rounded-lg border border-rose-800 text-rose-300">
+                Obesidade &ge; 30
+              </div>
+            </div>
+          </div>
+
+          <!-- Form & Live Result -->
+          <div class="lg:col-span-6 bg-brand-deep/90 p-6 sm:p-8 rounded-2xl border border-blue-900/80">
+            <form id="bmiForm" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="bmiWeight" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+                    Seu Peso (kg)
+                  </label>
+                  <input 
+                    type="number" 
+                    id="bmiWeight" 
+                    step="0.1" 
+                    min="30" 
+                    max="300" 
+                    placeholder="Ex: 75.5" 
+                    required 
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow text-sm"
+                  >
+                </div>
+                <div>
+                  <label for="bmiHeight" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+                    Sua Altura (cm)
+                  </label>
+                  <input 
+                    type="number" 
+                    id="bmiHeight" 
+                    min="100" 
+                    max="250" 
+                    placeholder="Ex: 175" 
+                    required 
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow text-sm"
+                  >
+                </div>
+              </div>
+
+              <button type="submit" class="btn-yellow w-full py-3.5 rounded-xl font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Calcular Meu Resultado</span>
+              </button>
+            </form>
+
+            <!-- Result Box -->
+            <div id="bmiResult" class="hidden mt-6 pt-6 border-t border-slate-800 animate-fadeIn">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase font-bold text-slate-400">Seu IMC Calculado:</span>
+                <span id="bmiScore" class="font-heading font-black text-3xl text-brand-yellow">0.0</span>
+              </div>
+              <div class="mb-2">
+                <span class="text-xs text-slate-400">Classificação:</span>
+                <span id="bmiStatus" class="ml-2 font-bold text-white">-</span>
+              </div>
+              <p id="bmiTip" class="text-xs text-slate-300 bg-slate-900/90 p-3.5 rounded-xl border border-slate-800 leading-relaxed"></p>
+              
+              <div class="mt-4">
+                <a href="#aula-gratis" class="text-xs font-bold text-brand-yellow hover:underline flex items-center gap-1">
+                  Agendar avaliação com personal gratuita &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       GALERIA DE FOTOS DA ACADEMIA
+       ========================================================================= -->
+  <section id="galeria" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+          Nossa Estrutura
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white mt-3">
+          Galeria de <span class="text-brand-yellow">Fotos</span>
+        </h2>
+        <p class="text-slate-400 mt-4 text-base">
+          Conheça cada cantinho do nosso espaço projetado para alta performance, conforto e segurança.
+        </p>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8">
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider bg-brand-yellow text-slate-950 transition-colors" data-filter="all">
+            Todos
+          </button>
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm uppercase tracking-wider bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition-colors" data-filter="musculacao">
+            Musculação
+          </button>
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm uppercase tracking-wider bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition-colors" data-filter="coletivas">
+            Aulas Coletivas
+          </button>
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm uppercase tracking-wider bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition-colors" data-filter="cardio">
+            Espaço Cardio
+          </button>
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm uppercase tracking-wider bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition-colors" data-filter="estrutura">
+            Vestiários & Estrutura
+          </button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Photo 1: Musculação -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="musculacao" data-title="Área de Pesos Livres & Halteres">
+          <img 
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" 
+            alt="Área de Halteres e Pesos Livres" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Musculação</span>
+            <h4 class="font-heading font-bold text-white text-base">Área de Pesos Livres</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2: Cardio -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="cardio" data-title="Esteiras e Simuladores de Escada">
+          <img 
+            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=80" 
+            alt="Espaço Cardio com Esteiras" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Cardio</span>
+            <h4 class="font-heading font-bold text-white text-base">Esteiras com Tela Interativa</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3: Coletivas / Spinning -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="coletivas" data-title="Sala de Spinning Climatizada com Efeitos Neon">
+          <img 
+            src="https://images.unsplash.com/photo-1520877880798-5ee004e3f11e?auto=format&fit=crop&w=800&q=80" 
+            alt="Sala de Spinning com Iluminação Neon" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Coletivas</span>
+            <h4 class="font-heading font-bold text-white text-base">Sala de Spinning Neon</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4: Musculação / Maquinário -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="musculacao" data-title="Máquinas Articuladas Biomecânicas">
+          <img 
+            src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" 
+            alt="Maquinário Biomecânico Moderno" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Musculação</span>
+            <h4 class="font-heading font-bold text-white text-base">Máquinas Biomecânicas</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5: Coletivas / Funcional -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="coletivas" data-title="Box de Treinamento Funcional">
+          <img 
+            src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" 
+            alt="Espaço Cross e Funcional" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Coletivas</span>
+            <h4 class="font-heading font-bold text-white text-base">Box Cross Training</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6: Estrutura / Vestiários -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="estrutura" data-title="Vestiários Climatizados com Duchas Aquecidas">
+          <img 
+            src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" 
+            alt="Vestiários Modernos e Higienizados" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Estrutura</span>
+            <h4 class="font-heading font-bold text-white text-base">Vestiários & Duchas</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 7: Coletivas / Lutas -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="coletivas" data-title="Tatame e Ringue de Artes Marciais">
+          <img 
+            src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=800&q=80" 
+            alt="Espaço de Boxe e Muay Thai" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Coletivas</span>
+            <h4 class="font-heading font-bold text-white text-base">Ringue & Sacos de Pancada</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 8: Estrutura / Recepção & Lounge -->
+        <div class="gallery-item group h-72 rounded-2xl relative shadow-lg" data-category="estrutura" data-title="Lounge de Convivência & Shake Bar">
+          <img 
+            src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=800&q=80" 
+            alt="Lounge e Recepção da Academia" 
+            class="w-full h-full object-cover"
+          >
+          <div class="gallery-overlay absolute inset-0 bg-brand-deep/80 p-5 flex flex-col justify-end">
+            <span class="text-[10px] uppercase font-bold text-brand-yellow">Estrutura</span>
+            <h4 class="font-heading font-bold text-white text-base">Lounge & Shake Bar</h4>
+            <div class="mt-2 text-xs text-brand-yellow flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar foto
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       EQUIPE DE TREINADORES (COACHES)
+       ========================================================================= -->
+  <section class="py-20 bg-brand-navy/50 relative border-t border-blue-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+          Especialistas
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl uppercase text-white mt-3">
+          Treinadores <span class="text-brand-yellow">Certificados</span>
+        </h2>
+        <p class="text-slate-400 mt-4 text-base">
+          Equipe técnica pós-graduada e registrada no CREF pronta para orientar sua execução e motivar seus resultados.
+        </p>
+      </div>
+
+      <!-- Coaches Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Coach 1 -->
+        <div class="glass-panel p-5 rounded-2xl text-center border border-blue-900/50 group hover:border-brand-yellow/50 transition-all">
+          <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-brand-yellow mb-4 group-hover:scale-105 transition-transform">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=400&q=80" alt="Treinador Rodrigo Costa" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white">Rodrigo Costa</h3>
+          <p class="text-xs text-brand-yellow font-semibold uppercase mt-0.5">Head Coach & Hipertrofia</p>
+          <span class="text-[11px] text-slate-400 block mt-2">CREF 089412-G/SP</span>
+        </div>
+
+        <!-- Coach 2 -->
+        <div class="glass-panel p-5 rounded-2xl text-center border border-blue-900/50 group hover:border-brand-yellow/50 transition-all">
+          <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-brand-yellow mb-4 group-hover:scale-105 transition-transform">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=400&q=80" alt="Treinadora Mariana Prado" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white">Mariana Prado</h3>
+          <p class="text-xs text-brand-yellow font-semibold uppercase mt-0.5">Cross Training & HIIT</p>
+          <span class="text-[11px] text-slate-400 block mt-2">CREF 074321-G/SP</span>
+        </div>
+
+        <!-- Coach 3 -->
+        <div class="glass-panel p-5 rounded-2xl text-center border border-blue-900/50 group hover:border-brand-yellow/50 transition-all">
+          <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-brand-yellow mb-4 group-hover:scale-105 transition-transform">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Treinadora Juliana Moura" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white">Juliana Moura</h3>
+          <p class="text-xs text-brand-yellow font-semibold uppercase mt-0.5">Spinning & Ritmos</p>
+          <span class="text-[11px] text-slate-400 block mt-2">CREF 093214-G/SP</span>
+        </div>
+
+        <!-- Coach 4 -->
+        <div class="glass-panel p-5 rounded-2xl text-center border border-blue-900/50 group hover:border-brand-yellow/50 transition-all">
+          <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-brand-yellow mb-4 group-hover:scale-105 transition-transform">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Treinador Lucas Silveira" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white">Lucas Silveira</h3>
+          <p class="text-xs text-brand-yellow font-semibold uppercase mt-0.5">Muay Thai & Biomecânica</p>
+          <span class="text-[11px] text-slate-400 block mt-2">CREF 065879-G/SP</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       DEPOIMENTOS DE ALUNOS
+       ========================================================================= -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+          Resultados Reais
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl uppercase text-white mt-3">
+          O Que Nossos <span class="text-brand-yellow">Alunos Dizem</span>
+        </h2>
+      </div>
+
+      <!-- Testimonial Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Testimonial 1 -->
+        <div class="glass-panel p-8 rounded-3xl border border-blue-900/60 relative">
+          <div class="flex text-brand-yellow text-sm gap-1 mb-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+            "Já passei por várias academias de rede onde você é só mais um número. Na Volt Fit os professores realmente corrigem a postura e montaram um treino que eliminou minhas dores lombares. Perdi 12kg em 5 meses!"
+          </p>
+          <div class="flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80" alt="Aluno Gabriel Santos" class="w-12 h-12 rounded-full object-cover border-2 border-brand-yellow">
+            <div>
+              <h3 class="font-heading font-bold text-white text-sm">Gabriel Santos</h3>
+              <p class="text-xs text-slate-400">Aluno há 1 ano • Plano Gold</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="glass-panel p-8 rounded-3xl border border-brand-yellow/40 relative shadow-xl">
+          <div class="flex text-brand-yellow text-sm gap-1 mb-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+            "A aula de Spinning Neon é viciante! O clima é maravilhoso, ar-condicionado sempre no ponto certo e vestiários impecáveis com secador de cabelo bom. Não troco por nada."
+          </p>
+          <div class="flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Aluna Beatriz Menezes" class="w-12 h-12 rounded-full object-cover border-2 border-brand-yellow">
+            <div>
+              <h3 class="font-heading font-bold text-white text-sm">Beatriz Menezes</h3>
+              <p class="text-xs text-slate-400">Aluna há 8 meses • Plano Black VIP</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="glass-panel p-8 rounded-3xl border border-blue-900/60 relative">
+          <div class="flex text-brand-yellow text-sm gap-1 mb-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+            "Equipamentos de altíssimo nível, nunca preciso ficar revezando halteres porque tem várias opções de cada peso. Estacionamento fácil e seguro faz toda a diferença antes do trabalho."
+          </p>
+          <div class="flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Aluno Marcelo Faria" class="w-12 h-12 rounded-full object-cover border-2 border-brand-yellow">
+            <div>
+              <h3 class="font-heading font-bold text-white text-sm">Marcelo Faria</h3>
+              <p class="text-xs text-slate-400">Aluno há 2 anos • Plano Silver</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LOCALIZAÇÃO, HORÁRIOS & UNIDADES
+       ========================================================================= -->
+  <section id="localizacao" class="py-24 bg-brand-navy/70 relative border-t border-blue-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+          Onde Estamos
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white mt-3">
+          Localização & <span class="text-brand-yellow">Unidades</span>
+        </h2>
+        <p class="text-slate-400 mt-4 text-base">
+          Ambientes com localização estratégica, fácil acesso ao transporte público e estacionamento com manobrista gratuito para alunos.
+        </p>
+
+        <!-- Unit Selector Buttons -->
+        <div class="flex justify-center gap-4 mt-8">
+          <button class="unit-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider bg-brand-yellow text-slate-950 border border-brand-yellow transition-all shadow-lg" data-unit="centro">
+            <i class="fa-solid fa-location-dot mr-1"></i> Unidade Centro / Paulista
+          </button>
+          <button class="unit-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wider bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 transition-all" data-unit="jardins">
+            <i class="fa-solid fa-location-dot mr-1"></i> Unidade Jardins / Sul
+          </button>
+        </div>
+      </div>
+
+      <!-- Location Details & Interactive Map Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- UNIT 1 CARD -->
+          <div class="unit-info-card glass-panel p-8 rounded-3xl border border-blue-900/60 shadow-xl" data-unit="centro">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-black uppercase text-brand-yellow tracking-wider">Unidade 01 - Matriz</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2.5 py-0.5 rounded-full font-bold">Aberta Agora</span>
+            </div>
+
+            <h3 class="font-heading font-black text-2xl text-white mb-2">Volt Fit Centro Paulista</h3>
+            <p class="text-slate-300 text-sm mb-6 flex items-start gap-2.5">
+              <i class="fa-solid fa-map-pin text-brand-yellow text-base mt-1"></i>
+              <span>Av. Paulista, 1500 - Bela Vista, São Paulo - SP, 01310-200 (A 200m do Metrô Trianon-Masp)</span>
+            </p>
+
+            <!-- Hours List -->
+            <div class="space-y-3 py-4 border-y border-slate-800 text-sm">
+              <div class="flex justify-between">
+                <span class="text-slate-400">Segunda a Sexta:</span>
+                <span class="text-white font-bold">05:30 às 23:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Sábados:</span>
+                <span class="text-white font-bold">08:00 às 18:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Domingos e Feriados:</span>
+                <span class="text-white font-bold">09:00 às 14:00</span>
+              </div>
+            </div>
+
+            <!-- Amenities -->
+            <div class="mt-6">
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Comodidades desta unidade:</div>
+              <div class="grid grid-cols-2 gap-2 text-xs text-slate-300">
+                <span><i class="fa-solid fa-square-parking text-brand-yellow mr-1.5"></i> Estacionamento gratuito</span>
+                <span><i class="fa-solid fa-wifi text-brand-yellow mr-1.5"></i> Wi-Fi de alta velocidade</span>
+                <span><i class="fa-solid fa-mug-saucer text-brand-yellow mr-1.5"></i> Shake Bar & Café</span>
+                <span><i class="fa-solid fa-lock text-brand-yellow mr-1.5"></i> Armários com senha</span>
+              </div>
+            </div>
+
+            <div class="mt-8 flex gap-3">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-yellow flex-1 py-3 rounded-xl text-center font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-solid fa-diamond-turn-right"></i> Traçar Rota
+              </a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="btn-blue-outline flex-1 py-3 rounded-xl text-center font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-green-400"></i> Falar com a Unidade
+              </a>
+            </div>
+          </div>
+
+          <!-- UNIT 2 CARD (HIDDEN BY DEFAULT) -->
+          <div class="unit-info-card glass-panel p-8 rounded-3xl border border-blue-900/60 shadow-xl hidden" data-unit="jardins">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-black uppercase text-brand-yellow tracking-wider">Unidade 02 - Jardins</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2.5 py-0.5 rounded-full font-bold">Aberta Agora</span>
+            </div>
+
+            <h3 class="font-heading font-black text-2xl text-white mb-2">Volt Fit Jardins Club</h3>
+            <p class="text-slate-300 text-sm mb-6 flex items-start gap-2.5">
+              <i class="fa-solid fa-map-pin text-brand-yellow text-base mt-1"></i>
+              <span>Rua Oscar Freire, 850 - Jardins, São Paulo - SP, 01426-000 (Com Valet Cortesia)</span>
+            </p>
+
+            <!-- Hours List -->
+            <div class="space-y-3 py-4 border-y border-slate-800 text-sm">
+              <div class="flex justify-between">
+                <span class="text-slate-400">Segunda a Sexta:</span>
+                <span class="text-white font-bold">06:00 às 23:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Sábados:</span>
+                <span class="text-white font-bold">08:00 às 19:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Domingos e Feriados:</span>
+                <span class="text-white font-bold">09:00 às 15:00</span>
+              </div>
+            </div>
+
+            <!-- Amenities -->
+            <div class="mt-6">
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Comodidades desta unidade:</div>
+              <div class="grid grid-cols-2 gap-2 text-xs text-slate-300">
+                <span><i class="fa-solid fa-square-parking text-brand-yellow mr-1.5"></i> Valet Gratuito 2 horas</span>
+                <span><i class="fa-solid fa-hot-tub-person text-brand-yellow mr-1.5"></i> Sauna Seca & Vapor</span>
+                <span><i class="fa-solid fa-dumbbell text-brand-yellow mr-1.5"></i> Box Funcional Aberto</span>
+                <span><i class="fa-solid fa-spray-can text-brand-yellow mr-1.5"></i> Amenities nos vestiários</span>
+              </div>
+            </div>
+
+            <div class="mt-8 flex gap-3">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-yellow flex-1 py-3 rounded-xl text-center font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-solid fa-diamond-turn-right"></i> Traçar Rota
+              </a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="btn-blue-outline flex-1 py-3 rounded-xl text-center font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-green-400"></i> Falar com a Unidade
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Map Column -->
+        <div class="lg:col-span-7">
+          <div class="glass-panel p-2 rounded-3xl border border-blue-900/60 shadow-2xl h-full min-h-[420px] overflow-hidden">
+            <iframe 
+              id="mapIframe"
+              title="Mapa de Localização da Academia Volt Fit"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106694142322!2d-46.65390548447545!3d-23.564611284681603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr" 
+              class="w-full h-full min-h-[420px] rounded-2xl border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       AGENDAMENTO DE AULA GRÁTIS (LEAD CAPTURE FORM)
+       ========================================================================= -->
+  <section id="aula-gratis" class="py-24 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="glass-panel rounded-3xl p-8 sm:p-12 border-2 border-brand-yellow/40 shadow-2xl glow-border-yellow">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-black uppercase tracking-widest text-slate-950 bg-brand-yellow px-4 py-1 rounded-full shadow">
+            Passo Simples & Rápido
+          </span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl uppercase text-white mt-4">
+            Experimente um Dia <span class="text-brand-yellow">Totalmente Grátis</span>
+          </h2>
+          <p class="text-slate-300 mt-2 text-sm sm:text-base">
+            Sem pegadinhas ou compromisso financeiro. Venha conhecer as máquinas, fazer uma aula e sentir a energia da Volt Fit.
+          </p>
+        </div>
+
+        <form id="freeClassForm" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="leadName" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Seu Nome Completo *
+              </label>
+              <input 
+                type="text" 
+                id="leadName" 
+                required 
+                placeholder="Ex: Carlos Eduardo" 
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-yellow"
+              >
+            </div>
+            <div>
+              <label for="leadPhone" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                WhatsApp / Celular com DDD *
+              </label>
+              <input 
+                type="tel" 
+                id="leadPhone" 
+                required 
+                placeholder="(11) 98765-4321" 
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-yellow"
+              >
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="leadEmail" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Seu Melhor E-mail *
+              </label>
+              <input 
+                type="email" 
+                id="leadEmail" 
+                required 
+                placeholder="seuemail@exemplo.com" 
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-yellow"
+              >
+            </div>
+            <div>
+              <label for="leadUnit" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Unidade Desejada *
+              </label>
+              <select 
+                id="leadUnit" 
+                required 
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-brand-yellow"
+              >
+                <option value="Unidade Centro (Av. Paulista)">Unidade Centro (Av. Paulista)</option>
+                <option value="Unidade Jardins (Rua Oscar Freire)">Unidade Jardins (Rua Oscar Freire)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="leadGoal" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+              Qual o seu principal objetivo?
+            </label>
+            <select 
+              id="leadGoal" 
+              class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-brand-yellow"
+            >
+              <option value="Hipertrofia e Ganho de Massa">Hipertrofia e Ganho de Massa</option>
+              <option value="Emagrecimento e Definição">Emagrecimento e Definição</option>
+              <option value="Saúde, Disposição e Qualidade de Vida">Saúde, Disposição e Qualidade de Vida</option>
+              <option value="Condicionamento Físico e Aulas Coletivas">Condicionamento Físico e Aulas Coletivas</option>
+            </select>
+          </div>
+
+          <button 
+            type="submit" 
+            class="btn-yellow w-full py-4 rounded-xl font-black text-base uppercase tracking-wider shadow-xl flex items-center justify-center gap-3 mt-4"
+          >
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Confirmar Agendamento da Aula Grátis</span>
+          </button>
+
+          <p class="text-[11px] text-center text-slate-400 mt-3">
+            <i class="fa-solid fa-lock text-brand-yellow mr-1"></i> Seus dados estão 100% seguros. Não enviamos spam.
+          </p>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FAQ (PERGUNTAS FREQUENTES - ACCORDION)
+       ========================================================================= -->
+  <section id="faq" class="py-20 bg-brand-navy/60 border-t border-blue-900/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow bg-brand-yellow/10 px-3 py-1 rounded-full border border-brand-yellow/30">
+          Tire Suas Dúvidas
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl uppercase text-white mt-3">
+          Perguntas <span class="text-brand-yellow">Frequentes</span>
+        </h2>
+      </div>
+
+      <!-- Accordion Items List -->
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="glass-panel rounded-2xl border border-blue-900/60 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-white flex justify-between items-center gap-4 hover:text-brand-yellow transition-colors">
+            <span>Existe taxa de adesão ou taxa anual oculta?</span>
+            <i class="fa-solid fa-chevron-down text-brand-yellow text-sm transition-transform duration-300 faq-icon"></i>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            Não! Na campanha promocional atual você tem <strong>matrícula 100% grátis</strong>. Nossos contratos são totalmente transparentes e detalham tudo desde o primeiro dia, sem pegadinhas ou cobranças surpresa de manutenção anual.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-panel rounded-2xl border border-blue-900/60 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-white flex justify-between items-center gap-4 hover:text-brand-yellow transition-colors">
+            <span>Como funciona a aula experimental gratuita?</span>
+            <i class="fa-solid fa-chevron-down text-brand-yellow text-sm transition-transform duration-300 faq-icon"></i>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            Ao preencher o formulário ou chamar no WhatsApp, nós reservamos seu passe vip de 1 dia na unidade que você escolher. Você pode treinar musculação, experimentar qualquer aula coletiva do horário e usar todos os nossos vestiários para conhecer a academia antes de decidir se matricular.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-panel rounded-2xl border border-blue-900/60 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-white flex justify-between items-center gap-4 hover:text-brand-yellow transition-colors">
+            <span>Nunca treinei antes. Vou ter alguém para me ajudar?</span>
+            <i class="fa-solid fa-chevron-down text-brand-yellow text-sm transition-transform duration-300 faq-icon"></i>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            Com certeza! Nosso salão de treino conta com instrutores dedicados em tempo integral. No seu primeiro dia, faremos um tour pelos equipamentos, montaremos sua série no aplicativo da Volt Fit e explicaremos cada movimento passo a passo para você treinar com tranquilidade e zero vergonha.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-panel rounded-2xl border border-blue-900/60 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-white flex justify-between items-center gap-4 hover:text-brand-yellow transition-colors">
+            <span>Posso treinar em qualquer uma das unidades com o meu plano?</span>
+            <i class="fa-solid fa-chevron-down text-brand-yellow text-sm transition-transform duration-300 faq-icon"></i>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            Os planos <strong>Gold</strong> e <strong>Black VIP</strong> garantem livre trânsito entre todas as filiais Volt Fit com a mesma biometria ou aplicativo. Já o plano Silver é restrito à unidade na qual a matrícula foi realizada.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="glass-panel rounded-2xl border border-blue-900/60 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-white flex justify-between items-center gap-4 hover:text-brand-yellow transition-colors">
+            <span>Quais as formas de pagamento aceitas?</span>
+            <i class="fa-solid fa-chevron-down text-brand-yellow text-sm transition-transform duration-300 faq-icon"></i>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            Aceitamos cartão de crédito no formato de recorrência (mensalidade descontada mês a mês sem bloquear o limite total do cartão), além de PIX, boleto bancário e cartões de débito diretamente no balcão da unidade.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="bg-brand-deep text-slate-300 border-t border-blue-900/60 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Summary (Col 1 & 2) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-brand-yellow text-2xl shadow-md border border-brand-yellow/40">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span class="font-heading font-black text-2xl tracking-tighter text-white">VOLT<span class="text-brand-yellow">FIT</span></span>
+          </div>
+          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            O centro de treinamento e performance definitivo. Mais que repetições e halteres, oferecemos uma comunidade focada na sua melhor versão diária.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-yellow hover:bg-brand-blue transition-colors">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-yellow hover:bg-brand-blue transition-colors">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-yellow hover:bg-brand-blue transition-colors">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-yellow hover:bg-brand-blue transition-colors">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white uppercase text-xs tracking-wider">Navegação</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#inicio" class="hover:text-brand-yellow transition-colors">Início</a></li>
+            <li><a href="#sobre" class="hover:text-brand-yellow transition-colors">Diferenciais</a></li>
+            <li><a href="#modalidades" class="hover:text-brand-yellow transition-colors">Modalidades</a></li>
+            <li><a href="#planos" class="hover:text-brand-yellow transition-colors">Planos & Preços</a></li>
+            <li><a href="#galeria" class="hover:text-brand-yellow transition-colors">Galeria de Fotos</a></li>
+            <li><a href="#imc" class="hover:text-brand-yellow transition-colors">Calculadora IMC</a></li>
+          </ul>
+        </div>
+
+        <!-- Horários & Contato -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white uppercase text-xs tracking-wider">Atendimento</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            <strong class="text-white">Segunda a Sexta:</strong><br>05:30 às 23:00
+          </p>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            <strong class="text-white">Sábados:</strong><br>08:00 às 18:00
+          </p>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            <strong class="text-white">Domingos e Feriados:</strong><br>09:00 às 14:00
+          </p>
+          <p class="text-xs text-brand-yellow font-bold pt-1">
+            <i class="fa-brands fa-whatsapp"></i> (11) 99999-9999
+          </p>
+        </div>
+
+        <!-- Newsletter / Ofertas -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white uppercase text-xs tracking-wider">Receba Ofertas VIP</h4>
+          <p class="text-xs text-slate-400">Cadastre seu e-mail para receber cupons exclusivos e dicas de treino:</p>
+          <form id="newsletterForm" class="space-y-2">
+            <input 
+              type="email" 
+              required 
+              placeholder="Seu melhor e-mail" 
+              class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-yellow"
+            >
+            <button type="submit" class="btn-yellow w-full py-2 rounded-lg text-xs font-black uppercase tracking-wider">
+              Cadastrar
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; 2026 Volt Fit Academia. Modelo de Site Vitrine. Todos os direitos reservados.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-slate-400">Termos de Uso</a>
+          <a href="#" class="hover:text-slate-400">Privacidade</a>
+          <a href="#" class="hover:text-slate-400">Regulamento Interno</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       LIGHTBOX MODAL FOR GALLERY
+       ========================================================================= -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-slate-950/90 flex items-center justify-center p-4">
+    <button id="lightboxClose" aria-label="Fechar" class="absolute top-6 right-6 text-white text-3xl hover:text-brand-yellow transition-colors">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button id="lightboxPrev" aria-label="Anterior" class="absolute left-4 sm:left-8 text-white text-3xl hover:text-brand-yellow transition-colors p-2">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button id="lightboxNext" aria-label="Próximo" class="absolute right-4 sm:right-8 text-white text-3xl hover:text-brand-yellow transition-colors p-2">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="Foto ampliada da academia" class="max-h-[70vh] w-auto max-w-full rounded-2xl shadow-2xl object-contain border border-blue-900">
+      <div class="text-center mt-4">
+        <span id="lightboxCategory" class="text-xs uppercase font-bold text-brand-yellow tracking-widest"></span>
+        <h3 id="lightboxTitle" class="text-lg font-bold text-white mt-1"></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SUCCESS MODAL (AULA GRÁTIS CONFIRMADA)
+       ========================================================================= -->
+  <div id="successModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="glass-panel p-8 sm:p-10 rounded-3xl max-w-md w-full text-center border-2 border-brand-yellow/50 shadow-2xl animate-fadeIn">
+      <div class="w-16 h-16 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-3xl mx-auto mb-5 shadow-lg">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="font-heading font-black text-2xl text-white uppercase">Aula Pré-Agendada!</h3>
+      <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+        Olá <strong id="modalStudentName" class="text-brand-yellow">Atleta</strong>! Recebemos sua solicitação para a <strong id="modalChosenUnit" class="text-brand-yellow">Unidade Principal</strong>.
+      </p>
+      <p class="text-xs text-slate-400 mt-2">
+        Nossa recepção entrará em contato via WhatsApp nas próximas horas para confirmar o horário da sua aula gratuita e recepcioná-lo.
+      </p>
+      <div class="mt-6 flex flex-col gap-3">
+        <button id="closeModalBtn" class="btn-yellow py-3 rounded-xl font-black text-xs uppercase tracking-wider">
+          Perfeito, Entendi!
+        </button>
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!+Acabei+de+me+cadastrar+no+site+e+quero+agilizar+minha+aula+experimental!" target="_blank" rel="noopener noreferrer" class="btn-blue-outline py-2.5 rounded-xl font-bold text-xs uppercase flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-green-400"></i> Falar Agora no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       TOAST NOTIFICATION
+       ========================================================================= -->
+  <div id="toastNotification" class="fixed bottom-6 left-6 z-50 glass-panel border border-brand-yellow/50 px-5 py-3.5 rounded-xl shadow-2xl flex items-center gap-3">
+    <div class="w-7 h-7 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center text-xs font-bold">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+    <span id="toastText" class="text-xs sm:text-sm text-white font-medium">Notificação</span>
+  </div>
+
+  <!-- =========================================================================
+       FLOATING WHATSAPP BUTTON
+       ========================================================================= -->
+  <a 
+    href="https://wa.me/5511999999999?text=Ol%C3%A1!+Gostaria+de+informa%C3%A7%C3%B5es+sobre+os+planos+e+a+aula+gr%C3%A1tis+na+Volt+Fit." 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Fale conosco pelo WhatsApp"
+    class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba59] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform duration-300 border-2 border-white/20"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-yellow-400"></span>
+    </span>
+  </a>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
